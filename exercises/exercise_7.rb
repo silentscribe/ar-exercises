@@ -11,7 +11,7 @@ puts "----------"
 
 puts "Give me a store name please: "
 # user_input = gets.chomp
-store = Store.create(name: user_input)
-store.errors.full_messages.each do |msg|
-  puts "#{msg}"
-end
+# store = Store.create(name: user_input)
+# store.errors.full_messages.each do |msg|
+#   puts "#{msg}"
+# end
