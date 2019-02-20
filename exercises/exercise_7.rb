@@ -10,7 +10,8 @@ puts "Exercise 7"
 puts "----------"
 
 puts "Give me a store name please: "
-user_input = gets.chomp
+# user_input = gets.chomp
 store = Store.create(name: user_input)
-puts "Store name required and #{store.errors[:name][0]}"
-puts "Store revenue required and #{store.errors[:annual_revenue][0]}"
+store.errors.full_messages.each do |msg|
+  puts "#{msg}"
+end
